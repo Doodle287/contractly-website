@@ -195,7 +195,7 @@ export default function Privacy() {
               <li><strong>Object to Processing:</strong> In certain circumstances, you may object to how we process your information</li>
             </ul>
             <p className="mt-4">
-              To exercise any of these rights, please contact us at support@contractly.ai with your request and account details.
+              To exercise any of these rights, please use the in-app support option under <strong>Settings → Help</strong> with your request and account details. A direct support channel will be published here once available.
             </p>
           </section>
 
@@ -227,7 +227,7 @@ export default function Privacy() {
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Withdrawing Consent</h3>
                 <p>
-                  Where we rely on your consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal. To withdraw consent, contact us at <span className="text-blue-600">privacy@contractly.ai</span>.
+                  Where we rely on your consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal. To withdraw consent, please use the in-app support option under <strong>Settings → Help</strong>.
                 </p>
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function Privacy() {
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">How to Exercise Your Rights</h3>
                 <p>
-                  To exercise any of these rights, email <span className="text-blue-600">privacy@contractly.ai</span> from the email address associated with your account. We may need to verify your identity before fulfilling your request. You may also designate an authorized agent to make requests on your behalf, in which case we will require written authorization and verification.
+                  To exercise any of these rights, use the in-app support option under <strong>Settings → Help</strong> while signed in to the account associated with your request. We may need to verify your identity before fulfilling your request. You may also designate an authorized agent to make requests on your behalf, in which case we will require written authorization and verification.
                 </p>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function Privacy() {
               Contractly AI is not intended for use by children under the age of 13, or under the applicable age of digital consent in your jurisdiction (which may be as high as 16 in parts of the European Economic Area). We do not knowingly collect personal information from children under these ages. If we become aware that a child under the applicable age has provided us with personal information, we will take steps to delete such information and terminate the child's account promptly.
             </p>
             <p className="mt-4">
-              If you are a parent or guardian and believe your child has created an account with us, please contact us immediately at support@contractly.ai.
+              If you are a parent or guardian and believe your child has created an account with us, please reach us through the in-app support option under <strong>Settings → Help</strong> so we can act promptly.
             </p>
           </section>
 
@@ -319,19 +319,22 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">12. Contact Us</h2>
             <p className="mb-4">
-              If you have questions, concerns, or requests regarding this Privacy Policy, our privacy practices, or how we handle your personal information, please contact us:
+              If you have questions, concerns, or requests regarding this Privacy Policy, our privacy practices, or how we handle your personal information, please contact us through the in-app support option:
             </p>
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 space-y-3">
               <p>
-                <strong>Email:</strong> <span className="text-blue-600">support@contractly.ai</span>
+                <strong>Company Name:</strong> <span>Contractly AI</span>
+              </p>
+              <p>
+                <strong>Support:</strong> In-app, under <strong>Settings → Help</strong>
               </p>
               <p>
                 <strong>Mailing Address:</strong>
                 <br />
                 Address available upon request
               </p>
-              <p>
-                <strong>Company Name:</strong> <span>Contractly AI</span>
+              <p className="text-sm text-slate-600">
+                A direct contact email and address will be published here once available.
               </p>
             </div>
             <p className="mt-4">

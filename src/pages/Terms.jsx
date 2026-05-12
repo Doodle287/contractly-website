@@ -270,7 +270,7 @@ export default function Terms() {
               If you have a dispute with Contractly AI, we encourage you to attempt resolution through good faith negotiation. Please contact our support team to discuss any concerns.
             </p>
             <p className="text-slate-700 leading-relaxed">
-              Any dispute that cannot be resolved through good faith negotiation within thirty (30) days shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. The arbitration shall take place in the State of Delaware, United States. Each party shall bear its own costs of arbitration unless the arbitrator determines otherwise. You may opt out of this arbitration agreement by sending written notice to support@contractly.ai within 30 days of first accepting these Terms.
+              Any dispute that cannot be resolved through good faith negotiation within thirty (30) days shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. The arbitration shall take place in the State of Delaware, United States. Each party shall bear its own costs of arbitration unless the arbitrator determines otherwise. You may opt out of this arbitration agreement by sending written notice through the in-app support option under <strong>Settings → Help</strong> within 30 days of first accepting these Terms.
             </p>
           </section>
 
@@ -280,17 +280,23 @@ export default function Terms() {
               16. Contact Information
             </h2>
             <p className="text-slate-700 leading-relaxed mb-4">
-              If you have questions about these Terms & Conditions or need to report a violation, please contact us at:
+              If you have questions about these Terms & Conditions or need to report a violation, please reach us through the in-app support option:
             </p>
             <div className="bg-slate-50 p-6 rounded-lg text-slate-700 space-y-2">
               <p>
-                <strong>Email:</strong> support@contractly.ai
+                <strong>Company Name:</strong> Contractly AI
+              </p>
+              <p>
+                <strong>Support:</strong> In-app, under <strong>Settings → Help</strong>
               </p>
               <p>
                 <strong>Mailing Address:</strong>
               </p>
               <p className="ml-4">
                 Address available upon request
+              </p>
+              <p className="text-sm text-slate-600 pt-2">
+                A direct contact email and address will be published here once available.
               </p>
             </div>
           </section>

@@ -5,7 +5,6 @@ import { IOS_APP_URL } from '../config/links';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const companyName = 'Contractly AI';
-  const domain = 'contractly.ai';
 
   const footerSections = [
     {
@@ -28,7 +27,6 @@ export default function Footer() {
       links: [
         { label: 'Help Center', href: '/support' },
         { label: 'Delete Account', href: '/delete-account' },
-        { label: 'Contact', href: `mailto:support@${domain}` },
       ],
     },
   ];

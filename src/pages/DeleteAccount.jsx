@@ -11,8 +11,6 @@ import {
   ChevronRight,
 } from 'lucide-react';
 
-const SUPPORT_EMAIL = 'support@contractly.ai';
-
 const DELETION_TIMEFRAME = '30 days';
 
 export default function DeleteAccount() {
@@ -188,19 +186,11 @@ export default function DeleteAccount() {
                 <h3 className="text-xl font-bold text-slate-900 mb-3">
                   Need Help?
                 </h3>
-                <p className="text-slate-600 mb-4">
-                  If you cannot access the Contractly AI app to delete your account, please
-                  contact our support team from the email address associated with your
-                  account:
-                </p>
-                <a
-                  href={`mailto:${SUPPORT_EMAIL}`}
-                  className="inline-block font-semibold text-blue-600 hover:text-blue-700 transition-colors mb-6"
-                >
-                  {SUPPORT_EMAIL}
-                </a>
-                <p className="text-sm text-slate-600 mb-6">
-                  Include your account email and we'll assist with the deletion process.
+                <p className="text-slate-600 mb-6">
+                  If you cannot access the Contractly AI app to delete your
+                  account, please use the in-app support option under{' '}
+                  <strong>Settings → Help</strong> from a device that is still
+                  signed in. A direct support channel will be added here soon.
                 </p>
                 <Link
                   to="/support"

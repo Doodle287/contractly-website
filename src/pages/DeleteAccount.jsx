@@ -8,6 +8,7 @@ import {
   Clock,
   Mail,
   Shield,
+  ChevronRight,
 } from 'lucide-react';
 
 const SUPPORT_EMAIL = 'support@contractly.ai';
@@ -229,6 +230,3 @@ export default function DeleteAccount() {
     </div>
   );
 }
-
-// Helper component for ChevronRight icon (import from lucide-react if not already imported)
-import { ChevronRight } from 'lucide-react';

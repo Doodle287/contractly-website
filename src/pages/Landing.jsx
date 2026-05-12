@@ -17,6 +17,7 @@ import {
   Users,
   Shield,
 } from 'lucide-react';
+import { IOS_APP_URL, ANDROID_APP_URL } from '../config/links';
 
 const Landing = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -90,14 +91,18 @@ const Landing = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
-              href="#download"
+              href={IOS_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
             >
               <Download size={20} />
               Download for iOS
             </a>
             <a
-              href="#download"
+              href={ANDROID_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-indigo-700 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-indigo-800 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
             >
               <Download size={20} />
@@ -514,7 +519,9 @@ const Landing = () => {
           </p>
 
           <a
-            href="#download"
+            href={IOS_APP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl"
           >
             <Download size={20} />
@@ -636,14 +643,18 @@ const Landing = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#download"
+              href={IOS_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
             >
               <Download size={20} />
               Download for iOS
             </a>
             <a
-              href="#download"
+              href={ANDROID_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2 border border-blue-400"
             >
               <Download size={20} />

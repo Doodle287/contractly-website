@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, Menu, X } from 'lucide-react';
+import { IOS_APP_URL } from '../config/links';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,9 +49,14 @@ export default function Navbar() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <button className="px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-600/50 transition-all duration-200">
+            <a
+              href={IOS_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-600/50 transition-all duration-200"
+            >
               Download App
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -81,9 +87,15 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <button className="w-full mt-2 px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-600/50 transition-all duration-200">
+              <a
+                href={IOS_APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="w-full text-center mt-2 px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-600/50 transition-all duration-200"
+              >
                 Download App
-              </button>
+              </a>
             </div>
           </div>
         )}

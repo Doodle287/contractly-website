@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FileText } from 'lucide-react';
+import { IOS_APP_URL } from '../config/links';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const companyName = 'Contractly AI';
-  const placeholderDomain = 'contractly.ai';
+  const domain = 'contractly.ai';
 
   const footerSections = [
     {
@@ -12,7 +13,7 @@ export default function Footer() {
       links: [
         { label: 'Features', href: '/#features' },
         { label: 'How It Works', href: '/#how-it-works' },
-        { label: 'Download', href: '#' },
+        { label: 'Download', href: IOS_APP_URL, external: true },
       ],
     },
     {
@@ -27,12 +28,26 @@ export default function Footer() {
       links: [
         { label: 'Help Center', href: '/support' },
         { label: 'Delete Account', href: '/delete-account' },
-        { label: 'Contact', href: `mailto:support@${placeholderDomain}` },
+        { label: 'Contact', href: `mailto:support@${domain}` },
       ],
     },
   ];
 
   const renderLink = (link) => {
+    if (link.external) {
+      return (
+        <a
+          key={link.label}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-slate-400 hover:text-white transition-colors duration-200 text-sm"
+        >
+          {link.label}
+        </a>
+      );
+    }
+
     if (link.href.startsWith('mailto:')) {
       return (
         <a

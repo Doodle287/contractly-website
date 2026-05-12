@@ -12,6 +12,9 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 
+const SUPPORT_EMAIL_HREF = (subject) =>
+  `mailto:support@contractly.ai?subject=${encodeURIComponent(subject)}`;
+
 const SUPPORT_EMAIL = 'support@contractly.ai';
 
 export default function Support() {
@@ -21,36 +24,42 @@ export default function Support() {
       title: 'Getting Started',
       description:
         'Learn how to use the Contractly AI app and analyze your first contract in minutes.',
+      emailSubject: 'Getting Started — Help Request',
     },
     {
       icon: CreditCard,
       title: 'Credits & Purchases',
       description:
         'Understand how credits work, purchase more, and restore your previous purchases.',
+      emailSubject: 'Credits & Purchases — Help Request',
     },
     {
       icon: User,
       title: 'Account Management',
       description:
         'Manage your profile, update settings, and learn about account deletion.',
+      emailSubject: 'Account Management — Help Request',
     },
     {
       icon: BarChart3,
       title: 'Analysis & Results',
       description:
         'Understand your analysis results, accuracy information, and result interpretations.',
+      emailSubject: 'Analysis & Results — Help Request',
     },
     {
       icon: Zap,
       title: 'Technical Issues',
       description:
         'Troubleshoot app crashes, upload problems, and device compatibility issues.',
+      emailSubject: 'Technical Issues — Help Request',
     },
     {
       icon: Lock,
       title: 'Privacy & Security',
       description:
         'Learn how we handle your data, document security, and privacy protections.',
+      emailSubject: 'Privacy & Security — Help Request',
     },
   ];
 
@@ -119,9 +128,10 @@ export default function Support() {
             {helpTopics.map((topic, index) => {
               const IconComponent = topic.icon;
               return (
-                <div
+                <a
                   key={index}
-                  className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md hover:border-blue-200 transition-all duration-200 group cursor-pointer"
+                  href={SUPPORT_EMAIL_HREF(topic.emailSubject)}
+                  className="bg-white rounded-xl border border-slate-200 p-6 hover:shadow-md hover:border-blue-200 transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
                   <div className="flex items-start gap-4">
                     <div className="flex items-center justify-center w-12 h-12 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors shrink-0">
@@ -135,7 +145,7 @@ export default function Support() {
                     </div>
                     <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-blue-600 transition-colors shrink-0 mt-1" />
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>

@@ -199,6 +199,79 @@ export default function Privacy() {
             </p>
           </section>
 
+          {/* 8a. EEA / UK Users (GDPR) */}
+          <section>
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">8a. Additional Rights for EEA and UK Users (GDPR)</h2>
+            <p className="mb-4">
+              If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland, you have additional rights under the General Data Protection Regulation (GDPR) and the UK GDPR.
+            </p>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">Lawful Basis for Processing</h3>
+                <p>
+                  We process your personal information on the following lawful bases: (i) <strong>performance of a contract</strong> with you (to provide the Contractly AI service); (ii) your <strong>consent</strong> (where required, for example for non-essential analytics); (iii) our <strong>legitimate interests</strong> in operating, securing, and improving the service; and (iv) <strong>compliance with legal obligations</strong>.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">International Data Transfers</h3>
+                <p>
+                  Your information, including uploaded documents and extracted content, may be transferred to and processed in countries outside the EEA or UK, including the United States, where our AI processing providers and cloud infrastructure are located. Where we transfer personal data outside the EEA or UK, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses (SCCs), the UK International Data Transfer Addendum, or adequacy decisions where applicable.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">Right to Lodge a Complaint</h3>
+                <p>
+                  You have the right to lodge a complaint with your local data protection supervisory authority if you believe our processing of your personal information violates applicable law. A list of EEA supervisory authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">edpb.europa.eu</a>. UK users may contact the Information Commissioner's Office at <a href="https://ico.org.uk" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">ico.org.uk</a>.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">Withdrawing Consent</h3>
+                <p>
+                  Where we rely on your consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal. To withdraw consent, contact us at <span className="text-blue-600">privacy@contractly.ai</span>.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* 8b. California Residents (CCPA / CPRA) */}
+          <section>
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">8b. Additional Rights for California Residents (CCPA / CPRA)</h2>
+            <p className="mb-4">
+              If you are a California resident, the California Consumer Privacy Act (CCPA), as amended by the California Privacy Rights Act (CPRA), provides you with additional rights regarding your personal information.
+            </p>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">Categories of Personal Information We Collect</h3>
+                <p>
+                  In the preceding 12 months we have collected the following categories of personal information described in Section 2 of this Policy: identifiers (e.g., email, account ID), commercial information (purchases), internet or other electronic network activity (usage data), geolocation (general, derived from IP), and inferences drawn from the foregoing. Sensitive personal information is limited to account credentials.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">No Sale or Sharing of Personal Information</h3>
+                <p>
+                  We do <strong>not</strong> sell your personal information, and we do <strong>not</strong> share your personal information for cross-context behavioral advertising as those terms are defined under the CCPA/CPRA.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">Your California Rights</h3>
+                <p>You have the right to:</p>
+                <ul className="list-disc list-inside space-y-2 ml-2 mt-2">
+                  <li>Know what personal information we collect, use, disclose, and the categories of sources and recipients</li>
+                  <li>Request deletion of your personal information, subject to certain exceptions</li>
+                  <li>Correct inaccurate personal information we maintain about you</li>
+                  <li>Limit the use and disclosure of sensitive personal information</li>
+                  <li>Not be discriminated against for exercising your privacy rights</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">How to Exercise Your Rights</h3>
+                <p>
+                  To exercise any of these rights, email <span className="text-blue-600">privacy@contractly.ai</span> from the email address associated with your account. We may need to verify your identity before fulfilling your request. You may also designate an authorized agent to make requests on your behalf, in which case we will require written authorization and verification.
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* 9. Account Deletion */}
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Account Deletion</h2>
@@ -224,7 +297,7 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">10. Children's Privacy</h2>
             <p>
-              Contractly AI is not intended for use by children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information and terminate the child's account promptly.
+              Contractly AI is not intended for use by children under the age of 13, or under the applicable age of digital consent in your jurisdiction (which may be as high as 16 in parts of the European Economic Area). We do not knowingly collect personal information from children under these ages. If we become aware that a child under the applicable age has provided us with personal information, we will take steps to delete such information and terminate the child's account promptly.
             </p>
             <p className="mt-4">
               If you are a parent or guardian and believe your child has created an account with us, please contact us immediately at support@contractly.ai.

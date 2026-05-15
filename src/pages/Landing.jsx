@@ -45,12 +45,17 @@ const Landing = () => {
     {
       question: 'What types of contracts can I analyze?',
       answer:
-        'Contractly AI works with virtually any contract type: employment agreements, leases, vendor terms, service agreements, NDAs, partnership agreements, and more. Our AI is trained to handle diverse contract types.',
+        'Contractly AI is sharpest on UAE employment offers, Ejari tenancy contracts, DIFC and free-zone agreements, freelance/consultancy contracts, NDAs, and vendor agreements. Most other contracts work too — these are just our sharpest categories.',
     },
     {
       question: 'How do credits work?',
       answer:
-        'New users receive free starter credits. Each contract analysis uses a small number of credits depending on document length. You can purchase additional credits anytime to continue analyzing more contracts.',
+        'Every new user gets 3 free analyses on signup — no card required. After that, 1 credit = 1 contract analysis. Buy more anytime: Starter pack (3 credits) for $0.99, or larger packs from $4.99. No subscription, no auto-renew, credits never expire.',
+    },
+    {
+      question: 'What languages are supported?',
+      answer:
+        'English now. Arabic, Russian, and Hindi coming soon. The app already understands contracts written in those languages — the analysis just outputs in English for now.',
     },
     {
       question: 'Is my data secure?',
@@ -81,12 +86,15 @@ const Landing = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-sm sm:text-base font-semibold text-blue-600 mb-4 tracking-wide uppercase">
+            Built for the UAE · Useful across the GCC
+          </p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
-            Understand Any Contract in Seconds
+            Don&apos;t Sign What You Didn&apos;t Read
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Upload a contract and get instant AI-powered structured analysis. No prompts. No guesswork. Just clarity.
+            Contractly is the AI contract reviewer that finds the red flags hiding in your UAE employment offer, Ejari tenancy, freelance agreement, or NDA — in 30 seconds, in plain English.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -111,7 +119,7 @@ const Landing = () => {
           </div>
 
           <p className="text-sm text-slate-500">
-            Free starter credits included · No credit card required
+            3 free analyses · No card · 1 credit = 1 contract
           </p>
         </div>
       </section>
@@ -121,41 +129,41 @@ const Landing = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
-              The Problem Most People Ignore
+              The traps you&apos;d miss. We find them in seconds.
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Reading contracts is time-consuming, confusing, and expensive. Most people skip the fine print and hope for the best. That's a risky gamble.
+              Most contracts in the UAE bury the real terms in clause 18, page 9. We read every page so you don&apos;t have to.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-              <div className="text-4xl font-bold text-blue-600 mb-3">85%</div>
+              <div className="text-4xl mb-3">📄</div>
               <p className="text-lg font-semibold text-slate-900 mb-2">
-                Sign Without Reading
+                Employment Offers
               </p>
               <p className="text-slate-600">
-                of people sign contracts without fully reading them, exposing themselves to unnecessary risk.
+                Probation traps, gratuity-shrinking basic-salary structures, GCC-wide non-competes, IP grabs, asymmetric notice periods, clawback clauses.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-              <div className="text-4xl font-bold text-blue-600 mb-3">20+</div>
+              <div className="text-4xl mb-3">🏠</div>
               <p className="text-lg font-semibold text-slate-900 mb-2">
-                Pages to Review
+                Tenancy &amp; Ejari
               </p>
               <p className="text-slate-600">
-                average contract length makes it tedious to identify key terms and hidden clauses.
+                Hidden maintenance liabilities, renewal-rate traps, security deposit clauses, early-exit penalties, eviction-risk language.
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-              <div className="text-4xl font-bold text-blue-600 mb-3">$1000s</div>
+              <div className="text-4xl mb-3">🤝</div>
               <p className="text-lg font-semibold text-slate-900 mb-2">
-                Hidden Costs
+                Freelance &amp; NDAs
               </p>
               <p className="text-slate-600">
-                unfavorable terms and missed details can cost you thousands in unexpected fees.
+                Overbroad IP assignment, GCC-wide non-competes, indefinite confidentiality, payment terms, scope-creep traps.
               </p>
             </div>
           </div>
@@ -634,11 +642,11 @@ const Landing = () => {
 
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Stop Guessing. Start Understanding.
+            Stop Signing Blind.
           </h2>
 
           <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Download Contractly AI today and get instant clarity on any contract. Your first analyses are on us.
+            3 free analyses. No card. No subscription. Just upload your UAE contract and see what it actually says.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

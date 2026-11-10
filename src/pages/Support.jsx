@@ -11,6 +11,7 @@ import {
   AlertCircle,
   CheckCircle2,
 } from 'lucide-react';
+import { SUPPORT_EMAIL } from '../config/links';
 
 export default function Support() {
   const helpTopics = [
@@ -84,18 +85,27 @@ export default function Support() {
               </div>
               <div className="flex-1">
                 <h2 className="text-2xl font-bold text-slate-900 mb-2">
-                  Get Help Inside the App
+                  Contact Us
                 </h2>
                 <p className="text-slate-600 mb-4">
-                  For account questions, billing, or technical issues, use the
-                  in-app support option under <strong>Settings → Help</strong>.
-                  We typically respond within{' '}
-                  <strong>24–48 business hours</strong>.
+                  For account questions, purchases, or technical issues, email{' '}
+                  <a
+                    href={`mailto:${SUPPORT_EMAIL}`}
+                    className="text-blue-600 font-medium underline underline-offset-2"
+                  >
+                    {SUPPORT_EMAIL}
+                  </a>
+                  . Tell us the email you sign in with, your phone model and
+                  what happened, and we will reply as soon as we can.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-slate-600">
                   <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
                   <span>
-                    A direct contact channel will be added here soon.
+                    To delete your account, see{' '}
+                    <Link to="/delete-account" className="text-blue-600 underline underline-offset-2">
+                      Account Deletion
+                    </Link>
+                    .
                   </span>
                 </div>
               </div>

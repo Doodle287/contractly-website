@@ -19,7 +19,7 @@ export default function Privacy() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
           <p className="text-sm text-slate-600">
-            Last updated: April 2026
+            Last updated: November 2026
           </p>
           <p className="text-sm text-slate-600 mt-1">
             Effective Date: April 15, 2026
@@ -82,6 +82,14 @@ export default function Privacy() {
                 <h3 className="font-semibold text-slate-900 mb-2">Device Information</h3>
                 <p>
                   We collect technical information about the devices you use to access the App, including device type (iPhone, iPad, Android device), operating system and version, app version, unique device identifiers, mobile network information, and device settings related to the App's functionality.
+                </p>
+              </div>
+
+              {/* Free-Credit Abuse Prevention */}
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">Free-Credit Abuse Prevention</h3>
+                <p>
+                  New accounts receive a few free welcome credits once per person and once per phone. To enforce this, when the App asks for those credits we check a one-way, keyed hash of your sign-in identifier (your email address, or your Apple or Google account ID) and a phone check: on iPhone, Apple's DeviceCheck service, which lets us keep one yes/no flag with Apple saying that this iPhone already received free credits; on Android, the app-specific Android ID, which is hashed on your phone before it is sent and hashed again with a secret key on our servers. We never store your raw email, account ID or Android ID for this purpose. These values are used only to prevent abuse of the free credits. They are not used for advertising, tracking, analytics or profiling, and they are not shared with anyone (on iPhone, Apple's DeviceCheck service sees only Apple's own device token).
                 </p>
               </div>
 
@@ -156,6 +164,7 @@ export default function Privacy() {
               <li><strong>Analysis History:</strong> Your analysis history is retained while your account remains active, allowing you to review previous analyses and documents</li>
               <li><strong>Uploaded Documents:</strong> Documents you upload are retained while your account is active. Once you delete a document from the App, we do not retain it for analysis purposes</li>
               <li><strong>Account Data:</strong> When you delete your account, all associated data including account information, documents, and analysis history are removed from our systems within a reasonable timeframe</li>
+              <li><strong>Free-Credit Records:</strong> When you delete your account, we keep the keyed one-way hash of your sign-in identifier (and, on Android, of the phone identifier) only to stop the free welcome credits from being claimed again. It cannot be turned back into your email or ID, is no longer linked to your account, and is used for nothing else</li>
               <li><strong>Legal Requirements:</strong> We may retain certain information longer if required by law, regulation, or legal proceedings</li>
               <li><strong>Usage Data:</strong> Aggregated and anonymized usage data may be retained for longer periods to improve our service</li>
             </ul>
@@ -287,6 +296,9 @@ export default function Privacy() {
             </ul>
             <p className="mt-4">
               For detailed instructions on how to delete your account, please visit our <Link to="/delete-account" className="text-blue-600 hover:text-blue-800 underline">account deletion page</Link>.
+            </p>
+            <p className="mt-4">
+              To prevent repeated claims of the free welcome credits, a keyed one-way hash of your sign-in identifier (and, on Android, of the app-specific phone identifier) is kept after deletion, as described in Section 6.
             </p>
             <p className="mt-4">
               Note that some information may be retained in backup systems for a limited period for security and legal compliance purposes, but will not be accessible through your account.

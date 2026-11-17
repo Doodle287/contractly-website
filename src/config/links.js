@@ -11,4 +11,4 @@ export const ANDROID_APP_URL =
   'https://play.google.com/store/apps/details?id=com.contractly.dev';
 
 // Support and account-deletion requests (shown on /support and /delete-account).
-export const SUPPORT_EMAIL = 'dummycash17@gmail.com';
+export const SUPPORT_EMAIL = 'support@eventlyuae.com';

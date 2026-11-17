@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SUPPORT_EMAIL } from '../config/links';
 
 export default function Privacy() {
   return (
@@ -36,7 +37,7 @@ export default function Privacy() {
               Contractly AI ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, Contractly AI (the "App"), and the services we provide through it.
             </p>
             <p className="mt-4">
-              Contractly AI is an AI-powered contract analysis application designed to help you understand, extract insights from, and manage your legal documents with ease. Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our App.
+              Contractly AI is an AI-powered application that helps you understand contracts and other documents: their risks, key dates and the questions worth asking before you sign. Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our App.
             </p>
           </section>
 
@@ -45,47 +46,34 @@ export default function Privacy() {
             <h2 className="text-xl font-semibold text-slate-900 mb-4">2. Information We Collect</h2>
 
             <div className="space-y-6">
-              {/* Account Information */}
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Account Information</h3>
                 <p>
-                  When you create an account, we collect information necessary to authenticate and identify you, including your email address, display name or username, password (hashed for security), phone number (optional), and profile information you choose to provide. We also collect authentication data, including login timestamps and authentication methods used.
+                  When you sign in we receive your email address and, if you provide it, your name. You can sign in with Apple, with Google, or with a one-time code sent to your email address. Apple and Google give us an account identifier and, depending on your choices, your name and email (Apple may give us a private relay address instead). Accounts created with earlier versions of the App may have a password; passwords are handled by our authentication provider and stored only in hashed form.
                 </p>
               </div>
 
-              {/* Uploaded Documents */}
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Uploaded Documents</h3>
+                <h3 className="font-semibold text-slate-900 mb-2">Your Documents</h3>
                 <p>
-                  Any contracts or legal documents you upload to the App for analysis are collected and stored on our secure servers. This includes PDF files, images, and other document formats you submit for processing. We retain your uploaded documents as long as your account remains active and you choose to keep them stored in the App.
+                  The PDF files and photos you choose stay on your phone. They are not uploaded to our servers. The App reads the text of the document on your phone (for photos, using the phone's own text recognition) and, when you ask for an analysis, sends only that text to our server. We store the document's name, its type and page count, a one-way fingerprint (hash) of the text that lets us recognise the same document if you analyse it again, and the analysis result. The result includes short quotes of the lines it refers to (so you can see where each finding comes from) and the key dates it found.
                 </p>
               </div>
 
-              {/* Extracted and Processed Data */}
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Extracted and Processed Data</h3>
+                <h3 className="font-semibold text-slate-900 mb-2">Usage and Diagnostic Data</h3>
                 <p>
-                  When you request analysis, we extract text and data from your uploaded documents using optical character recognition (OCR) and other processing technologies. The extracted content is processed through our AI analysis engine to generate insights, summaries, key terms identification, risk assessments, and other analytical outputs. This processed data and the analysis results are stored as part of your analysis history.
+                  We use an analytics service to understand how the App is used: for example that a sign-in succeeded and with which method, that an analysis started, finished or failed (with the document type, the overall risk level, the number of findings and the reason for a failure), and when the App is opened or closed. These events include the device model, operating system, app version, language, time zone and network type. They do not include your name, email, account identifier or any document text, and they are not linked to your account.
                 </p>
               </div>
 
-              {/* Usage Data */}
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Usage Data</h3>
+                <h3 className="font-semibold text-slate-900 mb-2">App Installation Information</h3>
                 <p>
-                  We collect information about your interactions with the App, including which features you use, how frequently you use them, the types of analyses you perform, documents you upload, analysis results you view, and how long you spend in the App. This data helps us understand usage patterns and improve our service.
+                  To keep your credit balance correct, the App sends a random installation identifier created by the App, together with the device model, operating system version and app version. This identifier is not your phone's advertising identifier or hardware identifier.
                 </p>
               </div>
 
-              {/* Device Information */}
-              <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Device Information</h3>
-                <p>
-                  We collect technical information about the devices you use to access the App, including device type (iPhone, iPad, Android device), operating system and version, app version, unique device identifiers, mobile network information, and device settings related to the App's functionality.
-                </p>
-              </div>
-
-              {/* Free-Credit Abuse Prevention */}
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Free-Credit Abuse Prevention</h3>
                 <p>
@@ -93,11 +81,17 @@ export default function Privacy() {
                 </p>
               </div>
 
-              {/* Purchase Information */}
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Purchase Information</h3>
                 <p>
-                  If you purchase credits, analysis packages, or premium features through the App, we collect purchase-related information including transaction IDs, purchase amounts, subscription tier information, and billing period details. Payment processing is handled by third-party payment platforms (Apple App Store and Google Play Store), and we do not directly collect or store complete credit card information.
+                  Credits are one-time in-app purchases; there is no subscription. Payments are processed by Apple (App Store) or Google (Google Play); we never receive your card details. Our purchase provider, RevenueCat, receives your App account identifier and the store's purchase details so that credits are added to the right account. We keep a record of credits added and used.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-2">What We Do Not Collect</h3>
+                <p>
+                  The App does not use your location, contacts, microphone or advertising identifier, does not show ads and does not track you across other companies' apps or websites. The camera and photo library are used only when you choose to scan or pick a document, and those images stay on your phone.
                 </p>
               </div>
             </div>
@@ -106,86 +100,71 @@ export default function Privacy() {
           {/* 3. How We Use Your Information */}
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">3. How We Use Your Information</h2>
-            <p className="mb-4">We use the information we collect for various purposes, including:</p>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li>Providing, maintaining, and improving the Contractly AI service and user experience</li>
-              <li>Processing your uploaded documents through our AI analysis engine to generate requested analyses</li>
-              <li>Maintaining your analysis history and enabling you to access previous analyses and documents</li>
-              <li>Authenticating your account and ensuring the security of your data</li>
-              <li>Communicating with you about your account, updates, or changes to our service</li>
-              <li>Sending you transactional emails (purchase confirmations, subscription updates, account notifications)</li>
-              <li>Analyzing usage patterns to enhance app functionality and performance</li>
-              <li>Complying with legal obligations, court orders, and government requests</li>
-              <li>Detecting, investigating, and preventing fraudulent transactions and other illegal activities</li>
-              <li>Protecting the rights, property, and safety of Contractly AI, our users, and the public</li>
+              <li>To analyse the documents you choose and show you the results, including your analysis history</li>
+              <li>To sign you in, keep your account secure and send you sign-in and account-deletion codes by email</li>
+              <li>To add, track and restore your credits</li>
+              <li>To prevent abuse of the free welcome credits and other fraud</li>
+              <li>To understand, in aggregate, how the App is used and to fix problems</li>
+              <li>To comply with legal obligations</li>
             </ul>
+            <p className="mt-4">We do not use your information for advertising, and we do not sell it.</p>
           </section>
 
           {/* 4. AI Processing */}
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">4. AI Processing and Language Models</h2>
-            <p className="mb-4">
-              Contractly AI uses advanced artificial intelligence and language models to analyze your uploaded documents and provide insights. Here's what you should know about this process:
-            </p>
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">4. AI Processing</h2>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li>Your uploaded contracts are processed using AI language models to extract information, identify key terms, assess risks, and generate analysis summaries</li>
-              <li>To provide these AI-powered analysis features, extracted data from your documents may be sent to third-party AI service providers who operate and maintain the language models we use</li>
-              <li>We have data processing agreements in place with all third-party AI providers to ensure appropriate security and confidentiality measures</li>
-              <li>We do <strong>not</strong> use your uploaded contracts, extracted content, or analysis results to train, fine-tune, or improve AI models</li>
-              <li>Your documents are processed with appropriate safeguards to protect sensitive information, though you should avoid uploading documents containing extremely sensitive personal information if you have concerns</li>
+              <li>Before your first analysis the App asks for your consent to send document text for AI processing.</li>
+              <li>The text read from your document is sent from our server to OpenAI, which runs the language model that produces the analysis. OpenAI processes it on our behalf; under OpenAI's API terms it is not used to train their models and may be kept by OpenAI for a limited period (up to 30 days) for abuse monitoring.</li>
+              <li>We do <strong>not</strong> use your documents, their text or your analysis results to train or improve AI models.</li>
+              <li>Analyses are generated automatically and can be wrong or incomplete. They are information to help you understand a document, not legal advice.</li>
             </ul>
           </section>
 
-          {/* 5. Third-Party Services */}
+          {/* 5. Service Providers */}
           <section>
-            <h2 className="text-xl font-semibold text-slate-900 mb-4">5. Third-Party Services and Integrations</h2>
-            <p className="mb-4">
-              Contractly AI uses several third-party services to operate and provide functionality. These third parties may collect and process information as described below:
-            </p>
+            <h2 className="text-xl font-semibold text-slate-900 mb-4">5. Service Providers</h2>
+            <p className="mb-4">We use these providers to run the App. They process data only on our behalf and under their own security commitments:</p>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li><strong>App Store Platforms:</strong> Apple App Store and Google Play Store handle distribution, downloads, and app management. These platforms may collect data subject to their own privacy policies</li>
-              <li><strong>AI Processing Providers:</strong> Third-party AI and machine learning services process your document content to generate analyses as described in Section 4</li>
-              <li><strong>Analytics Providers:</strong> We use analytics tools to understand app usage, user behavior, and performance metrics. These tools may collect anonymized or aggregated usage data</li>
-              <li><strong>Subscription Management Platforms:</strong> We use third-party subscription management platforms to manage recurring subscriptions, process purchases, and handle billing cycles</li>
-              <li><strong>Cloud Storage and Infrastructure Providers:</strong> We use reputable cloud service providers to host our infrastructure, store data, and ensure service reliability</li>
+              <li><strong>Supabase</strong> — hosting of our database, sign-in and server functions</li>
+              <li><strong>OpenAI</strong> — AI analysis of document text (Section 4)</li>
+              <li><strong>RevenueCat</strong> — management of in-app purchases</li>
+              <li><strong>PostHog</strong> — usage analytics that are not linked to your account</li>
+              <li><strong>Resend</strong> — delivery of sign-in and account-deletion code emails</li>
+              <li><strong>Apple and Google</strong> — Sign in with Apple / Google, app distribution, payments, and Apple DeviceCheck</li>
             </ul>
             <p className="mt-4">
-              We do not sell, trade, or share your personal information with third parties for their marketing purposes. Third parties are contractually obligated to use your information only as necessary to provide the services they offer to Contractly AI.
+              We do not sell, rent or share your personal information with third parties for their own marketing.
             </p>
           </section>
 
           {/* 6. Data Retention */}
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">6. Data Retention</h2>
-            <p className="mb-4">
-              We retain your information for as long as necessary to provide our services and fulfill the purposes outlined in this Privacy Policy. Here's our retention approach:
-            </p>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li><strong>Analysis History:</strong> Your analysis history is retained while your account remains active, allowing you to review previous analyses and documents</li>
-              <li><strong>Uploaded Documents:</strong> Documents you upload are retained while your account is active. Once you delete a document from the App, we do not retain it for analysis purposes</li>
-              <li><strong>Account Data:</strong> When you delete your account, all associated data including account information, documents, and analysis history are removed from our systems within a reasonable timeframe</li>
-              <li><strong>Free-Credit Records:</strong> When you delete your account, we keep the keyed one-way hash of your sign-in identifier (and, on Android, of the phone identifier) only to stop the free welcome credits from being claimed again. It cannot be turned back into your email or ID, is no longer linked to your account, and is used for nothing else</li>
-              <li><strong>Legal Requirements:</strong> We may retain certain information longer if required by law, regulation, or legal proceedings</li>
-              <li><strong>Usage Data:</strong> Aggregated and anonymized usage data may be retained for longer periods to improve our service</li>
+              <li><strong>Analyses:</strong> kept until you delete them in History or delete your account</li>
+              <li><strong>Your files and photos:</strong> stay on your phone; the App's private copy is removed when you sign out or delete your account</li>
+              <li><strong>Account data:</strong> deleted when you delete your account, together with your analyses and credit records</li>
+              <li><strong>Free-credit records:</strong> when you delete your account, we keep the keyed one-way hash of your sign-in identifier (and, on Android, of the phone identifier) only to stop the free welcome credits from being claimed again. It cannot be turned back into your email or ID, is no longer linked to your account, and is used for nothing else</li>
+              <li><strong>Installation records:</strong> the random installation identifier with device model and versions (Section 2) may be kept after account deletion; it is not linked to your name or email</li>
+              <li><strong>Purchase records:</strong> Apple, Google and RevenueCat keep records of purchases under their own policies, as required for payments and refunds</li>
+              <li><strong>Analytics:</strong> usage events that are not linked to your account may be kept in aggregate to improve the App</li>
+              <li><strong>Legal requirements:</strong> we may keep information longer where the law requires it</li>
             </ul>
           </section>
 
           {/* 7. Data Security */}
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">7. Data Security</h2>
-            <p className="mb-4">
-              We implement comprehensive security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. These measures include:
-            </p>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li>Encryption of data in transit using industry-standard TLS/SSL protocols</li>
-              <li>Encryption of sensitive data at rest on our secure servers</li>
-              <li>Secure authentication mechanisms and password hashing</li>
-              <li>Regular security audits and vulnerability assessments</li>
-              <li>Access controls limiting employee access to personal information to authorized personnel only</li>
-              <li>Secure deletion procedures for data when it is no longer needed</li>
+              <li>All data the App sends travels encrypted (HTTPS/TLS)</li>
+              <li>Each account can access only its own data (database access rules enforced on the server)</li>
+              <li>Your sign-in session is kept in your phone's secure storage</li>
+              <li>Original files are kept in the App's private storage and excluded from device backups</li>
             </ul>
             <p className="mt-4">
-              While we employ reasonable security measures, no method of transmission over the internet or storage is completely secure. We cannot guarantee absolute security, and any transmission of data is at your own risk. We encourage you to use strong passwords and keep your account credentials confidential.
+              No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
             </p>
           </section>
 
@@ -193,18 +172,15 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">8. Your Privacy Rights</h2>
             <p className="mb-4">
-              Depending on your location, you may have certain rights regarding your personal information:
+              Depending on where you live, you may have the right to access, correct, delete or receive a copy of your personal information, and to object to or restrict certain processing.
             </p>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li><strong>Access:</strong> You have the right to access the personal information we hold about you and request a copy</li>
-              <li><strong>Correction:</strong> You can request that we correct inaccurate or incomplete personal information</li>
-              <li><strong>Deletion:</strong> You have the right to request deletion of your personal information, subject to certain legal exceptions</li>
-              <li><strong>Data Portability:</strong> Where applicable, you may request your data in a structured, commonly used, machine-readable format</li>
-              <li><strong>Opt-Out of Communications:</strong> You can opt out of promotional emails or non-essential communications by following the unsubscribe instructions in our messages</li>
-              <li><strong>Object to Processing:</strong> In certain circumstances, you may object to how we process your information</li>
+              <li>You can see your analyses in History and delete any of them there</li>
+              <li>You can change your name in Profile</li>
+              <li>You can delete your account in Profile → Delete account (see Section 9)</li>
             </ul>
             <p className="mt-4">
-              To exercise any of these rights, please use the in-app support option under <strong>Settings → Help</strong> with your request and account details. A direct support channel will be published here once available.
+              For any other request, contact us through our <Link to="/support" className="text-blue-600 hover:text-blue-800 underline">support page</Link> from the email address of your account.
             </p>
           </section>
 
@@ -218,13 +194,13 @@ export default function Privacy() {
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Lawful Basis for Processing</h3>
                 <p>
-                  We process your personal information on the following lawful bases: (i) <strong>performance of a contract</strong> with you (to provide the Contractly AI service); (ii) your <strong>consent</strong> (where required, for example for non-essential analytics); (iii) our <strong>legitimate interests</strong> in operating, securing, and improving the service; and (iv) <strong>compliance with legal obligations</strong>.
+                  We process your personal information on the following lawful bases: (i) <strong>performance of a contract</strong> with you (to provide the Contractly AI service); (ii) your <strong>consent</strong> (for sending document text for AI processing); (iii) our <strong>legitimate interests</strong> in operating, securing and improving the service, including analytics that are not linked to your account and preventing abuse of free credits; and (iv) <strong>compliance with legal obligations</strong>.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">International Data Transfers</h3>
                 <p>
-                  Your information, including uploaded documents and extracted content, may be transferred to and processed in countries outside the EEA or UK, including the United States, where our AI processing providers and cloud infrastructure are located. Where we transfer personal data outside the EEA or UK, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses (SCCs), the UK International Data Transfer Addendum, or adequacy decisions where applicable.
+                  Your information, including the text read from your documents, may be transferred to and processed in countries outside the EEA or UK, including the United States, where our AI processing providers and cloud infrastructure are located. Where we transfer personal data outside the EEA or UK, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses (SCCs), the UK International Data Transfer Addendum, or adequacy decisions where applicable.
                 </p>
               </div>
               <div>
@@ -236,7 +212,7 @@ export default function Privacy() {
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Withdrawing Consent</h3>
                 <p>
-                  Where we rely on your consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal. To withdraw consent, please use the in-app support option under <strong>Settings → Help</strong>.
+                  Where we rely on your consent, you may withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal. To withdraw consent, stop requesting analyses and contact us through our <Link to="/support" className="text-blue-600 hover:text-blue-800 underline">support page</Link>; you can also delete your account at any time.
                 </p>
               </div>
             </div>
@@ -252,7 +228,7 @@ export default function Privacy() {
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Categories of Personal Information We Collect</h3>
                 <p>
-                  In the preceding 12 months we have collected the following categories of personal information described in Section 2 of this Policy: identifiers (e.g., email, account ID), commercial information (purchases), internet or other electronic network activity (usage data), geolocation (general, derived from IP), and inferences drawn from the foregoing. Sensitive personal information is limited to account credentials.
+                  In the preceding 12 months we have collected the following categories of personal information described in Section 2 of this Policy: identifiers (e.g., email, account ID), commercial information (purchases), internet or other electronic network activity (usage data not linked to your account), and the content of documents you choose to analyse. We do not collect precise geolocation.
                 </p>
               </div>
               <div>
@@ -275,7 +251,7 @@ export default function Privacy() {
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">How to Exercise Your Rights</h3>
                 <p>
-                  To exercise any of these rights, use the in-app support option under <strong>Settings → Help</strong> while signed in to the account associated with your request. We may need to verify your identity before fulfilling your request. You may also designate an authorized agent to make requests on your behalf, in which case we will require written authorization and verification.
+                  To exercise any of these rights, contact us through our <Link to="/support" className="text-blue-600 hover:text-blue-800 underline">support page</Link> from the email address of the account concerned. We may need to verify your identity before fulfilling your request. You may also designate an authorized agent to make requests on your behalf, in which case we will require written authorization and verification.
                 </p>
               </div>
             </div>
@@ -285,20 +261,20 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">9. Account Deletion</h2>
             <p className="mb-4">
-              You can delete your Contractly AI account at any time through the settings or account management section of the App. When you delete your account:
+              You can delete your Contractly AI account at any time in the App under <strong>Profile → Delete account</strong>. When you delete your account:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-2">
-              <li>Your account information is removed from our active systems</li>
-              <li>Your uploaded documents are permanently deleted</li>
-              <li>Your analysis history is removed</li>
-              <li>Your profile and all associated data are erased</li>
-              <li>Any active subscriptions or memberships are cancelled</li>
+              <li>Your account, profile and sign-in details are deleted</li>
+              <li>Your analyses, their results and your credit records are deleted</li>
+              <li>The App removes its private copies of your files from your phone</li>
+              <li>If you signed in with Apple, we ask Apple to revoke the App's access</li>
+              <li>Unused credits are lost; purchases already made are not refunded by deletion</li>
             </ul>
             <p className="mt-4">
               For detailed instructions on how to delete your account, please visit our <Link to="/delete-account" className="text-blue-600 hover:text-blue-800 underline">account deletion page</Link>.
             </p>
             <p className="mt-4">
-              To prevent repeated claims of the free welcome credits, a keyed one-way hash of your sign-in identifier (and, on Android, of the app-specific phone identifier) is kept after deletion, as described in Section 6.
+              Some records are kept after deletion as described in Section 6: the free-credit hashes, installation records, and purchase records held by Apple, Google and RevenueCat.
             </p>
             <p className="mt-4">
               Note that some information may be retained in backup systems for a limited period for security and legal compliance purposes, but will not be accessible through your account.
@@ -312,7 +288,7 @@ export default function Privacy() {
               Contractly AI is not intended for use by children under the age of 13, or under the applicable age of digital consent in your jurisdiction (which may be as high as 16 in parts of the European Economic Area). We do not knowingly collect personal information from children under these ages. If we become aware that a child under the applicable age has provided us with personal information, we will take steps to delete such information and terminate the child's account promptly.
             </p>
             <p className="mt-4">
-              If you are a parent or guardian and believe your child has created an account with us, please reach us through the in-app support option under <strong>Settings → Help</strong> so we can act promptly.
+              If you are a parent or guardian and believe your child has created an account with us, please contact us through our <Link to="/support" className="text-blue-600 hover:text-blue-800 underline">support page</Link> so we can act promptly.
             </p>
           </section>
 
@@ -331,22 +307,22 @@ export default function Privacy() {
           <section>
             <h2 className="text-xl font-semibold text-slate-900 mb-4">12. Contact Us</h2>
             <p className="mb-4">
-              If you have questions, concerns, or requests regarding this Privacy Policy, our privacy practices, or how we handle your personal information, please contact us through the in-app support option:
+              If you have questions, concerns, or requests regarding this Privacy Policy, our privacy practices, or how we handle your personal information, please contact us:
             </p>
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 space-y-3">
               <p>
                 <strong>Company Name:</strong> <span>Contractly AI</span>
               </p>
               <p>
-                <strong>Support:</strong> In-app, under <strong>Settings → Help</strong>
+                <strong>Email:</strong> <a href={`mailto:${SUPPORT_EMAIL}`} className="text-blue-600 hover:text-blue-800 underline">{SUPPORT_EMAIL}</a>
+              </p>
+              <p>
+                <strong>Support page:</strong> <Link to="/support" className="text-blue-600 hover:text-blue-800 underline">contractly-ai.vercel.app/support</Link>
               </p>
               <p>
                 <strong>Mailing Address:</strong>
                 <br />
                 Address available upon request
-              </p>
-              <p className="text-sm text-slate-600">
-                A direct contact email and address will be published here once available.
               </p>
             </div>
             <p className="mt-4">
@@ -357,7 +333,7 @@ export default function Privacy() {
           {/* Footer */}
           <div className="pt-8 mt-12 border-t border-slate-200">
             <p className="text-sm text-slate-600">
-              Thank you for trusting Contractly AI with your important documents. We're committed to protecting your privacy while delivering the powerful contract analysis capabilities you need.
+              Thank you for trusting Contractly AI with your important documents.
             </p>
           </div>
 

@@ -39,7 +39,7 @@ export default function DeleteAccount() {
       number: 4,
       title: 'Confirm',
       description:
-        'If you sign in with email, enter your password. If you sign in with Apple or Google, confirm with that account.',
+        'If you sign in with email, enter the 6-digit code we email you. If you sign in with Apple, confirm with Apple (Face ID or your Apple ID password). Google accounts only need the confirm tap.',
     },
     {
       number: 5,
